@@ -6,18 +6,18 @@ export class Grade10 extends Component {
         const settings = {
             dots: false,
             arrows: true,
-            autoplay: false,
+            autoplay: true,
             infinite: true,
             speed: 500,
-            slidesToShow: 7,
-            slidesToScroll: 9,
+            slidesToShow: 4,
+            slidesToScroll: 1,
             adaptiveHeight: false,
             rows: 1
         };
         return (
             <Fragment>
                 <div className="container mt-4 mb-2">
-                    <h3 className="title">GRADE 10</h3>
+                    <h2 className="title">GRADE 10</h2>
                     <Slider {...settings} className>
                         <div>
                             <div className="slide-grade-list-container">

@@ -6,11 +6,11 @@ export class Recently extends Component {
         const settings = {
             dots: false,
             arrows: true,
-            autoplay: false,
+            autoplay: true,
             infinite: true,
             speed: 500,
-            slidesToShow: 5,
-            slidesToScroll: 7,
+            slidesToShow: 3,
+            slidesToScroll: 1,
             adaptiveHeight: false,
             rows: 1
         };
