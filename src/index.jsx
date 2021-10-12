@@ -6,6 +6,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './css/App.css';
 import './css/Carousel.css';
+import './css/Responsive.css';
 
 import Home from './components/Home';
 import Header from './components/Header';

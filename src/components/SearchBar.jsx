@@ -6,7 +6,7 @@ export class SearchBar extends Component {
             <Fragment>
                 <div className="container mt-5">
                     <div className="row">
-                        <div className="col-md-5">
+                        <div className="col-md-5 col-sm-8 col-8">
                             <div className="input-group">
                                 <input className="form-control border-end-0 border" type="search" placeholder="Search by Grade, Subject or Video" id="example-search-input"></input>
                                 <span className="input-group-append">
@@ -16,8 +16,8 @@ export class SearchBar extends Component {
                                 </span>
                             </div>
                         </div>
-                        <div className="col-md-5"></div>
-                        <div className="col-md-2 float-end">
+                        <div className="col-md-5 mobile-div-hidden"></div>
+                        <div className="col-md-2 col-sm-4 col-4">
                             <select className="form-select" aria-label="Default select example">
                                 <option value="1">CAPS</option>
                                 <option value="2">CIE</option>

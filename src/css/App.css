@@ -1,8 +1,11 @@
 body {
     background-color: black;
 }
+.navbar-dark {
+    background-color: black !important;
+}
 .container-fluid {
-    padding: .35rem 4rem;
+    padding: .5rem 4rem;
 }
 .circle-btn {
     border-radius: 30px;
