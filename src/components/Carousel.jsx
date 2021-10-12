@@ -19,13 +19,13 @@ export class Carousel extends Component {
                 <Slider {...settings} className>
                     <div>
                         <div className="slide-container">
-                            <img src={`${process.env.PUBLIC_URL}/assets/img/Rectangle2.png`} alt="" />
+                            <img src={`${process.env.PUBLIC_URL}/assets/img/slide1.png`} alt="" />
                         </div>
                     </div>
                     <div>
                         <div className="slide-container">
                             <div className="slide-image">
-                                <img src={`${process.env.PUBLIC_URL}/assets/img/Rectangle2.png`} alt="" />
+                                <img src={`${process.env.PUBLIC_URL}/assets/img/slide2.png`} alt="" />
                             </div>
                         </div>
                     </div>
