@@ -1,0 +1,42 @@
+.slick-prev,
+.slick-next {
+  padding: 5px 10px;
+  font-size: 20px;
+}
+.slick-prev {
+  left: 3% !important;
+  z-index: 1;
+}
+.slick-next {
+  right: 3% !important;
+  z-index: 1;
+}
+.slide-container {
+  height: 300px;
+  position: relative;
+}
+.slide-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slide-list-container {
+  position: relative;
+}
+.slide-list-container img {
+  height: 100%;
+  width: 95%;
+}
+.slide-grade-list-container {
+  position: relative;
+}
+.slide-grade-list-container img {
+  width: 95%;
+}
+.linear {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
