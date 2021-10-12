@@ -12,7 +12,6 @@
   z-index: 1;
 }
 .slide-container {
-  height: 300px;
   position: relative;
 }
 .slide-container img {
