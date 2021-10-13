@@ -23,7 +23,11 @@ export class Accordion extends Component {
                                     <i className="bi bi-caret-down-fill text-white"></i>
                                     <i className="bi bi-dash-lg text-white"></i>
                                 </div>
-                                <p className="accordion-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui nemo vel, deserunt cum vero at</p>
+                                <div className="accordion-content">
+                                    <p>States of Matter</p>
+                                    <p>Brownian Motion</p>
+                                    <p>Diffusion</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -44,7 +48,6 @@ export class Accordion extends Component {
                                     <i className="bi bi-caret-down-fill text-white"></i>
                                     <i className="bi bi-dash-lg text-white"></i>
                                 </div>
-                                <p className="accordion-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui nemo vel, deserunt cum vero at</p>
                             </div>
                         </div>
                     </div>
@@ -65,7 +68,6 @@ export class Accordion extends Component {
                                     <i className="bi bi-caret-down-fill text-white"></i>
                                     <i className="bi bi-dash-lg text-white"></i>
                                 </div>
-                                <p className="accordion-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui nemo vel, deserunt cum vero at</p>
                             </div>
                         </div>
                     </div>
