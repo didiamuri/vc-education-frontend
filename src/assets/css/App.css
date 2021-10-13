@@ -96,10 +96,9 @@ header {
 }
 .accordion-header i {
   margin-left: 16px;
-  cursor: pointer;
 }
-.accordion-header i.bi-dash-lg {
-  display: none;
+.accordion-icon {
+  cursor: pointer;
 }
 .accordion-header.opened ~ .accordion-content {
   max-height: 150px;

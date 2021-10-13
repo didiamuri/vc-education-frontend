@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react'
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import vid1 from '../assets/img/vid1.png';
 import vid2 from '../assets/img/vid2.png';
@@ -48,37 +49,51 @@ export class Recently extends Component {
                     <Slider {...settings} className>
                         <div>
                             <div className="slide-list-container">
-                                <img src={vid1} alt="" />
+                                <Link to="/course">
+                                    <img src={vid1} alt="" />
+                                </Link>
                             </div>
                         </div>
                         <div>
                             <div className="slide-list-container">
-                                <img src={vid2} alt="" />
+                                <Link to="/course">
+                                    <img src={vid2} alt="" />
+                                </Link>
                             </div>
                         </div>
                         <div>
                             <div className="slide-list-container">
-                                <img src={vid3} alt="" />
+                                <Link to="/course">
+                                    <img src={vid3} alt="" />
+                                </Link>
                             </div>
                         </div>
                         <div>
                             <div className="slide-list-container">
-                                <img src={vid4} alt="" />
+                                <Link to="/course">
+                                    <img src={vid4} alt="" />
+                                </Link>
                             </div>
                         </div>
                         <div>
                             <div className="slide-list-container">
-                                <img src={vid4} alt="" />
+                                <Link to="/course">
+                                    <img src={vid4} alt="" />
+                                </Link>
                             </div>
                         </div>
                         <div>
                             <div className="slide-list-container">
-                                <img src={vid2} alt="" />
+                                <Link to="/course">
+                                    <img src={vid2} alt="" />
+                                </Link>
                             </div>
                         </div>
                         <div>
                             <div className="slide-list-container">
-                                <img src={vid3} alt="" />
+                                <Link to="/course">
+                                    <img src={vid3} alt="" />
+                                </Link>
                             </div>
                         </div>
                     </Slider>
