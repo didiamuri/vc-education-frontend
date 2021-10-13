@@ -1,0 +1,140 @@
+/* DAY 1 */
+
+body {
+  background-color: black;
+}
+.navbar-dark {
+  background-color: black !important;
+}
+.container-fluid {
+  padding: 0.5rem 4rem;
+}
+.circle-btn {
+  border-radius: 30px;
+}
+header {
+  margin-bottom: 65px;
+}
+.title {
+  color: #e9dede;
+}
+.mt-200 {
+  margin-top: 200px;
+}
+.ms-n5 {
+  margin-left: -45px;
+  border: none !important;
+}
+.form-control,
+.form-control:focus {
+  color: #e9dede;
+  background-color: #4f4e50;
+  border: none !important;
+  box-shadow: none;
+  border-radius: 5px !important;
+}
+.form-control::placeholder {
+  color: #e9dede;
+}
+.form-select,
+.form-select:focus {
+  color: #e9dede;
+  background-color: #4f4e50;
+  border: none !important;
+  box-shadow: none;
+  border-radius: 5px !important;
+}
+.custom-btn {
+  background-color: #4f4e50 !important;
+  color: #e9dede !important;
+}
+
+/* DAY 2 */
+.bg-dark-custom {
+  background-color: #4c4c4c !important;
+}
+.mt-100 {
+  margin-top: 100px !important;
+}
+.img-content {
+  position: relative;
+}
+.img-content img {
+  width: 100%;
+}
+.card-body {
+  padding: 0 !important;
+}
+.custom-card-body {
+  padding: 20px !important;
+}
+.content {
+  text-align: left;
+  padding: 4rem 2rem;
+  color: #e9dede;
+}
+.content h3 {
+  font-weight: 600;
+}
+.accordion-item {
+  background-color: transparent;
+  border: none;
+  color: #e9dede;
+}
+.accordion-header {
+  position: relative;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  text-align: left;
+  font-size: 1.2em;
+  font-weight: bolder;
+  letter-spacing: 0.7px;
+  display: flex;
+  justify-content: space-between;
+}
+.accordion-header i {
+  margin-left: 16px;
+  cursor: pointer;
+}
+.accordion-header i.bi-dash-lg {
+  display: none;
+}
+.accordion-header.opened ~ .accordion-content {
+  max-height: 150px;
+  opacity: 1;
+  transition: opacity 0.3s linear, max-height 0.3s linear;
+}
+.accordion-header.opened i.bi-caret-down-fill {
+  display: none;
+}
+.accordion-header.opened i.bi-dash-lg {
+  display: block;
+}
+.pl-70 {
+  padding-left: 70px;
+}
+.accordion-content {
+  color: #90a3b8;
+  padding-top: 16px;
+  margin-bottom: 16px;
+  letter-spacing: 0.7px;
+  line-height: 24px;
+  overflow: hidden;
+  display: none;
+  max-height: 0;
+  opacity: 0;
+  transition: opacity 0.3s linear, max-height 0.3s linear;
+}
+.accordion-img {
+  width: 100%;
+}
+.accordion-title {
+  font-size: 1.7rem;
+}
+.accordion-subtitle {
+  font-size: 0.9rem;
+  font-weight: normal;
+  line-height: 1.8rem;
+}

@@ -1,4 +1,5 @@
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* DAY 1 */
   .container-fluid {
     padding: 0.5rem 2rem;
   }
@@ -8,8 +9,11 @@
   footer li > .text-muted{
       font-size: 1rem;
   }
+  /* DAY 2 */
+
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+  /* DAY 1 */
   .mobile-div-hidden {
     display: none;
   }
@@ -42,4 +46,5 @@
   footer li > .text-muted{
       font-size: .78rem;
   }
+  /* DAY 2 */
 }

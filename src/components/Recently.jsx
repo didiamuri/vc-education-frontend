@@ -1,5 +1,9 @@
 import React, { Component, Fragment } from 'react'
 import Slider from 'react-slick';
+import vid1 from '../assets/img/vid1.png';
+import vid2 from '../assets/img/vid2.png';
+import vid3 from '../assets/img/vid3.png';
+import vid4 from '../assets/img/vid4.png';
 
 export class Recently extends Component {
     render() {
@@ -44,37 +48,37 @@ export class Recently extends Component {
                     <Slider {...settings} className>
                         <div>
                             <div className="slide-list-container">
-                                <img src={`${process.env.PUBLIC_URL}/assets/img/vid1.png`} alt="" />
+                                <img src={vid1} alt="" />
                             </div>
                         </div>
                         <div>
                             <div className="slide-list-container">
-                                <img src={`${process.env.PUBLIC_URL}/assets/img/vid2.png`} alt="" />
+                                <img src={vid2} alt="" />
                             </div>
                         </div>
                         <div>
                             <div className="slide-list-container">
-                                <img src={`${process.env.PUBLIC_URL}/assets/img/vid3.png`} alt="" />
+                                <img src={vid3} alt="" />
                             </div>
                         </div>
                         <div>
                             <div className="slide-list-container">
-                                <img src={`${process.env.PUBLIC_URL}/assets/img/vid4.png`} alt="" />
+                                <img src={vid4} alt="" />
                             </div>
                         </div>
                         <div>
                             <div className="slide-list-container">
-                                <img src={`${process.env.PUBLIC_URL}/assets/img/vid4.png`} alt="" />
+                                <img src={vid4} alt="" />
                             </div>
                         </div>
                         <div>
                             <div className="slide-list-container">
-                                <img src={`${process.env.PUBLIC_URL}/assets/img/vid2.png`} alt="" />
+                                <img src={vid2} alt="" />
                             </div>
                         </div>
                         <div>
                             <div className="slide-list-container">
-                                <img src={`${process.env.PUBLIC_URL}/assets/img/vid3.png`} alt="" />
+                                <img src={vid3} alt="" />
                             </div>
                         </div>
                     </Slider>

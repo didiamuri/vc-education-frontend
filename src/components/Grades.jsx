@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import Slider from 'react-slick';
+import thumbnail1 from '../assets/img/thumbnail1.png';
+import thumbnail2 from '../assets/img/thumbnail2.png';
 
 export class Grades extends Component {
     render() {
@@ -44,47 +46,47 @@ export class Grades extends Component {
                     <Slider {...settings} className>
                         <div>
                             <div className="slide-grade-list-container">
-                                <img src={`${process.env.PUBLIC_URL}/assets/img/thumbnail1.png`} alt="" />
+                                <img src={thumbnail1} alt="" />
                             </div>
                         </div>
                         <div>
                             <div className="slide-grade-list-container">
-                                <img src={`${process.env.PUBLIC_URL}/assets/img/thumbnail2.png`} alt="" />
+                                <img src={thumbnail2} alt="" />
                             </div>
                         </div>
                         <div>
                             <div className="slide-grade-list-container">
-                                <img src={`${process.env.PUBLIC_URL}/assets/img/thumbnail1.png`} alt="" />
+                                <img src={thumbnail1} alt="" />
                             </div>
                         </div>
                         <div>
                             <div className="slide-grade-list-container">
-                                <img src={`${process.env.PUBLIC_URL}/assets/img/thumbnail2.png`} alt="" />
+                                <img src={thumbnail2} alt="" />
                             </div>
                         </div>
                         <div>
                             <div className="slide-grade-list-container">
-                                <img src={`${process.env.PUBLIC_URL}/assets/img/thumbnail2.png`} alt="" />
+                                <img src={thumbnail2} alt="" />
                             </div>
                         </div>
                         <div>
                             <div className="slide-grade-list-container">
-                                <img src={`${process.env.PUBLIC_URL}/assets/img/thumbnail1.png`} alt="" />
+                                <img src={thumbnail1} alt="" />
                             </div>
                         </div>
                         <div>
                             <div className="slide-grade-list-container">
-                                <img src={`${process.env.PUBLIC_URL}/assets/img/thumbnail1.png`} alt="" />
+                                <img src={thumbnail1} alt="" />
                             </div>
                         </div>
                         <div>
                             <div className="slide-grade-list-container">
-                                <img src={`${process.env.PUBLIC_URL}/assets/img/thumbnail2.png`} alt="" />
+                                <img src={thumbnail2} alt="" />
                             </div>
                         </div>
                         <div>
                             <div className="slide-grade-list-container">
-                                <img src={`${process.env.PUBLIC_URL}/assets/img/thumbnail1.png`} alt="" />
+                                <img src={thumbnail1} alt="" />
                             </div>
                         </div>
                     </Slider>
