@@ -21,6 +21,7 @@ const MainVideoPage = () => {
                             muted={false}
                             playing={true}
                             width='100%'
+                            height='100%'
                             controls={true}
                             light={true}
                         />
