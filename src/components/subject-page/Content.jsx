@@ -9,7 +9,7 @@ export const accordionData = [
             {
                 contentId: 11,
                 contentTite: 'States of Matter',
-                videoUrl: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
+                videoUrl: 'https://s3.eu-west-2.amazonaws.com/brightmind.guru/IGCSE_BIOLOGY/1.3+classification+of+animals+and+plants.m4v',
                 description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim commodo justo, sit amet sodales neque ornare sed. Aenean at pellentesque lacus. Maecenas vulputate ipsum quis commodo dictum. Maecenas commodo libero'
             },
             {
