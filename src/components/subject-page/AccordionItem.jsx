@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import vid5 from '../../assets/img/vid5.png';
 
 const AccordionItem = ({ id, title, subTitle, content }) => {
 
+    const history = useHistory();
     const [isActive, setIsActive] = useState(false);
+    const viewVideo = (id, title, video, desc) => {
+        history.push("/video", { id, title, video, desc });
+    }
 
     return (
         <div className="card bg-dark-custom mb-3">
@@ -17,7 +22,7 @@ const AccordionItem = ({ id, title, subTitle, content }) => {
                             <div className="col-md-8 pl-70">
                                 <h3 className="accordion-title">{title}</h3>
                                 <p className="accordion-subtitle">{subTitle}</p>
-                                <button className="btn btn-primary circle-btn">Take Quiz</button>
+                                <Link to="/quiz" className="btn btn-primary circle-btn">Take Quiz</Link>
                             </div>
                         </div>
                         <div className="accordion-icon" onClick={() => setIsActive(!isActive)}>
@@ -25,8 +30,8 @@ const AccordionItem = ({ id, title, subTitle, content }) => {
                         </div>
                     </div>
                     {isActive && <div className="accordion-content">
-                        {content.map(({ contentId, contentTite }) => (
-                            <p>{contentTite}</p>
+                        {content.map(({ contentId, contentTite, videoUrl, description }) => (
+                            <p key={contentId} onClick={() => viewVideo(contentId, contentTite, videoUrl, description)}>{contentTite}</p>
                         ))}
                     </div>}
                 </div>

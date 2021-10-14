@@ -1,10 +1,10 @@
 /* DAY 1 */
 
 body {
-  background-color: black;
+  background-color: #151518;
 }
 .navbar-dark {
-  background-color: black !important;
+  background-color: #151518 !important;
 }
 .container-fluid {
   padding: 0.5rem 4rem;
@@ -118,23 +118,16 @@ header {
   background-color: black;
   margin-top: 12px !important;
   margin: -38px -21px;
-  padding-top: .03rem;
-  /* color: #90a3b8;
-  padding-top: 16px;
-  margin-bottom: 16px;
-  letter-spacing: 0.7px;
-  line-height: 24px;
-  overflow: hidden;
-  display: none;
-  max-height: 0;
-  opacity: 0;
-  transition: opacity 0.3s linear, max-height 0.3s linear; */
+  padding-top: 0.03rem;
 }
-.accordion-content p {
-  padding: 1.2rem;
-  background-color: #2E2E2E ;
-  margin: .2rem 0;
-
+.accordion-content p,
+.accordion-content p > a {
+  padding: 1.2rem .7rem;
+  background-color: #2e2e2e;
+  margin: 0.2rem 0;
+  color: #e9dede !important;
+  text-decoration: none;
+  cursor: pointer;
 }
 .accordion-img {
   width: 100%;
@@ -146,4 +139,48 @@ header {
   font-size: 0.9rem;
   font-weight: normal;
   line-height: 1.8rem;
+}
+
+/* DAY 3 */
+
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+}
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.video-container {
+  height: 24.4rem;
+  padding: 1rem;
+  background-color: #000;
+}
+.video-info {
+  margin-top: 1.5rem;
+  color: #e9dede;
+}
+.question-container {
+  margin-left: 12px;
+}
+.question-number {
+  background-color: #e9dede;
+  padding: .8rem 1rem;
+  margin-left: -2rem;
+  font-weight: 600;
+}
+.question-content {
+  margin-top: -30px;
+  padding: 0px 2rem;
+}
+.question-content p {
+  text-align: left !important;
+  font-size: 1.1rem;
+}
+.question-content img {
+  max-width: 30% !important;
+}
+.question-content .response {
+  text-align: left !important;
 }

@@ -2,7 +2,7 @@ import React, { Fragment, useEffect } from 'react'
 import Accordion from './Accordion';
 import vid4 from '../../assets/img/vid4.png';
 
-const CourseMain = () => {
+const MainSubjectPage = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -34,4 +34,4 @@ const CourseMain = () => {
     )
 }
 
-export default CourseMain
+export default MainSubjectPage
