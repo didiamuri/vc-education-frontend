@@ -76,20 +76,20 @@ export class Questions extends Component {
                                 <p>In which state of matter do the particles have the most energy?</p>
                                 <div className="response mt-3">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"></input>
-                                        <label class="form-check-label" for="flexRadioDefault1">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="quiz1"></input>
+                                        <label class="form-check-label" for="quiz1">
                                             Solid
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"></input>
-                                        <label class="form-check-label" for="flexRadioDefault2">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="quiz2"></input>
+                                        <label class="form-check-label" for="quiz2">
                                             Liquid
                                         </label>
                                     </div>
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3"></input>
-                                        <label class="form-check-label" for="flexRadioDefault3">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="quiz3"></input>
+                                        <label class="form-check-label" for="quiz3">
                                             Gas
                                         </label>
                                     </div>
