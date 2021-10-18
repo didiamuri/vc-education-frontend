@@ -1,4 +1,5 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component, Fragment } from 'react';
+import logo from '../../assets/img/brightmind-logo.png';
 
 export class Footer extends Component {
     render() {
@@ -7,7 +8,9 @@ export class Footer extends Component {
                 <div className="border-bottom mt-200"></div>
                 <div className="container">
                     <footer className="mt-5 mb-5">
-                        <h1 className="text-center title">Brightmind</h1>
+                        <div className="logo text-center mb-4">
+                            <img src={logo} alt="" />
+                        </div>
                         <div className="row">
                             <div className="col-md-7 col-sm-6 col-6">
                                 <ul className="nav justify-content-center mb-3">

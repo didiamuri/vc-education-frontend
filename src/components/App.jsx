@@ -6,8 +6,8 @@ import Home from './Home';
 import MainQuizPage from './quiz-page/Main';
 import MainSubjectPage from './subject-page/Main';
 import MainVideoPage from './video-page/Main';
-import Footer from './Footer';
-import Header from './Header';
+import Header from './shared/Header';
+import Footer from './shared/Footer';
 
 const App = () => {
 
