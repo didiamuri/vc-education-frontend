@@ -9,7 +9,7 @@ export class Header extends Component {
                     <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
                         <div className="container-fluid">
                             <a className="navbar-brand" href="/">Brightmind</a>
-                            <button className="btn btn-primary circle-btn">SIGN IN</button>
+                            <a className="btn btn-primary circle-btn" href="/login">SIGN IN</a>
                         </div>
                     </nav>
                 </header>

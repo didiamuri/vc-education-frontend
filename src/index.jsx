@@ -8,15 +8,11 @@ import './assets/css/App.css';
 import './assets/css/Carousel.css';
 import './assets/css/Responsive.css';
 
-import Header from './components/Header';
-import Footer from './components/Footer';
-import App from './components/App';
+import Layout from './layout/Layout';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
-    <App />
-    <Footer />
+    <Layout />
   </React.StrictMode>,
   document.getElementById('root')
 );

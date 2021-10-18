@@ -6,11 +6,10 @@
   .footer-justify-content {
     justify-content: center !important;
   }
-  footer li > .text-muted{
-      font-size: 1rem;
+  footer li > .text-muted {
+    font-size: 1rem;
   }
   /* DAY 2 */
-
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   /* DAY 1 */
@@ -43,8 +42,20 @@
   .footer-justify-content {
     justify-content: center !important;
   }
-  footer li > .text-muted{
-      font-size: .78rem;
+  footer li > .text-muted {
+    font-size: 0.78rem;
   }
-  /* DAY 2 */
+  /* DAY 4 */
+  .auth-card {
+    margin: 0 auto 50px;
+    max-width: 300px;
+  }
+  .auth-bg .title-content {
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 1.5rem !important;
+  }
+  .auth-bg .title-content p {
+    padding: 2px;
+  }
 }
