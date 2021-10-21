@@ -77,13 +77,19 @@ const AuthState = (props) => {
         formData,
         config
       );
-      console.log(res);
+      console.log('token ',res.data.token);
+      console.log('user ', res.data.data);
       dispatch({
         type: LOGIN_SUCCESS,
-        payload: res.data,
+        payload: res.data.token,
       });
-      // loadUser();
+
+      dispatch({
+        type: USER_LOADED,
+        payload: res.data.data,
+      });
     } catch (err) {
+      console.log(err);
       dispatch({
         type: LOGIN_FAIL,
         payload: err.response.data.msg,

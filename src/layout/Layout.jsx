@@ -11,15 +11,10 @@ export class Layout extends Component {
       <AuthState>
         <Router>
           <Switch>
-            <Route exact path="/login">
-              <LoginView />
-            </Route>
-            <Route exact path="/signup">
-              <SignupView />
-            </Route>
-            <Route exact path="/">
-              <App />
-            </Route>
+            <Route exact path="/login" component={LoginView} />
+
+            <Route exact path="/signup" component={SignupView} />
+            <Route exact path="/" component={App} />
           </Switch>
         </Router>
       </AuthState>

@@ -3,11 +3,8 @@ import blue_logo from "../../assets/img/brightmind-blue-logo.png";
 import AuthContext from "../../context/auth/authContext";
 
 const LoginView = ({ history }) => {
-
-    const authContext = useContext(AuthContext);
-    const { login } = authContext;
-
-    
+  const authContext = useContext(AuthContext);
+  const { login, isAuthenticated, error } = authContext;
 
   const [user, setUser] = useState({
     email: "",
@@ -16,7 +13,15 @@ const LoginView = ({ history }) => {
 
   useEffect(() => {
     document.body.style.backgroundColor = "#000";
-  }, []);
+    console.log(error);
+    if (isAuthenticated) {
+      history.push("/");
+    }
+    if (error === "Invalid credentials") {
+     
+    }
+    // eslint-disable-next-line
+  }, [isAuthenticated, history]);
 
   const onChange = (e) => {
     setUser({ ...user, [e.target.name]: e.target.value });
@@ -29,7 +34,7 @@ const LoginView = ({ history }) => {
       //   setAlert("Please fill in all fileds", "danger");
       console.log("Put some values bro");
     } else {
-        login({ email, password });
+      login({ email, password });
     }
   };
   return (
