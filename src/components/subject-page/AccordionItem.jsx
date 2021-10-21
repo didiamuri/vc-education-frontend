@@ -7,7 +7,7 @@ const AccordionItem = ({ id, title, subTitle, content }) => {
     const history = useHistory();
     const [isActive, setIsActive] = useState(false);
     const viewVideo = (id, title, video, desc) => {
-        history.push("/video", { id, title, video, desc });
+        history.push("/app/video", { id, title, video, desc });
     }
 
     return (
@@ -22,7 +22,7 @@ const AccordionItem = ({ id, title, subTitle, content }) => {
                             <div className="col-md-8 pl-70">
                                 <h3 className="accordion-title">{title}</h3>
                                 <p className="accordion-subtitle">{subTitle}</p>
-                                <Link to="/quiz" className="btn btn-primary circle-btn">Take Quiz</Link>
+                                <Link to="/app/quiz" className="btn btn-primary circle-btn">Take Quiz</Link>
                             </div>
                         </div>
                         <div className="accordion-icon" onClick={() => setIsActive(!isActive)}>

@@ -49,49 +49,49 @@ export class Recently extends Component {
                     <Slider {...settings} className>
                         <div>
                             <div className="slide-list-container">
-                                <Link to="/subject-page">
+                                <Link to="/app/subject-page">
                                     <img src={vid1} alt="" />
                                 </Link>
                             </div>
                         </div>
                         <div>
                             <div className="slide-list-container">
-                                <Link to="/subject-page">
+                                <Link to="/app/subject-page">
                                     <img src={vid2} alt="" />
                                 </Link>
                             </div>
                         </div>
                         <div>
                             <div className="slide-list-container">
-                                <Link to="/subject-page">
+                                <Link to="/app/subject-page">
                                     <img src={vid3} alt="" />
                                 </Link>
                             </div>
                         </div>
                         <div>
                             <div className="slide-list-container">
-                                <Link to="/subject-page">
+                                <Link to="/app/subject-page">
                                     <img src={vid4} alt="" />
                                 </Link>
                             </div>
                         </div>
                         <div>
                             <div className="slide-list-container">
-                                <Link to="/subject-page">
+                                <Link to="/app/subject-page">
                                     <img src={vid4} alt="" />
                                 </Link>
                             </div>
                         </div>
                         <div>
                             <div className="slide-list-container">
-                                <Link to="/subject-page">
+                                <Link to="/app/subject-page">
                                     <img src={vid2} alt="" />
                                 </Link>
                             </div>
                         </div>
                         <div>
                             <div className="slide-list-container">
-                                <Link to="/subject-page">
+                                <Link to="/app/subject-page">
                                     <img src={vid3} alt="" />
                                 </Link>
                             </div>

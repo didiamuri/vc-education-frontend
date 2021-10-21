@@ -8,11 +8,11 @@ import './assets/css/App.css';
 import './assets/css/Carousel.css';
 import './assets/css/Responsive.css';
 
-import Layout from './layout/Layout';
+import App from './components/App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Layout />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
