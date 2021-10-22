@@ -18,7 +18,6 @@ const LoginView = ({ history }) => {
       history.push("/");
     }
     if (error === "Invalid credentials") {
-     
     }
     // eslint-disable-next-line
   }, [isAuthenticated, history]);

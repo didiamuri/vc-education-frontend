@@ -24,6 +24,8 @@ const AuthState = (props) => {
   };
   const [state, dispatch] = useReducer(authReducer, initialState);
 
+  console.log(state);
+  
   // Load user
   const loadUser = async () => {
     if (localStorage.token) {
@@ -49,13 +51,22 @@ const AuthState = (props) => {
       },
     };
     try {
-      const res = await axios.post("/api/users", formData, config);
+      const res = await axios.post("/api/user/register", formData, config);
+      console.log(res.data.user);
+      dispatch({
+        type: LOGIN_SUCCESS,
+        payload: res.data.token,
+      });
 
       dispatch({
-        type: REGISTER_SUCCESS,
-        payload: res.data,
+        type: USER_LOADED,
+        payload: res.data.data,
       });
-      loadUser();
+      
+      dispatch({
+        type: REGISTER_SUCCESS,
+        payload: res.data.user,
+      });
     } catch (err) {
       dispatch({
         type: REGISTER_FAIL,
@@ -72,13 +83,8 @@ const AuthState = (props) => {
       },
     };
     try {
-      const res = await axios.post(
-        "/api/user/login",
-        formData,
-        config
-      );
-      console.log('token ',res.data.token);
-      console.log('user ', res.data.data);
+      const res = await axios.post("/api/user/login", formData, config);
+      // console.log("res ", res);
       dispatch({
         type: LOGIN_SUCCESS,
         payload: res.data.token,

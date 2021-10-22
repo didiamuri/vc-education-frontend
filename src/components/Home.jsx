@@ -1,24 +1,33 @@
-import React, { Component, Fragment } from 'react'
-import Carousel from './Carousel'
-import Grade10 from './Grade10'
-import Grade11 from './Grade11'
-import Grades from './Grades'
-import Recently from './Recently'
-import SearchBar from './SearchBar'
+import React, { Fragment, useEffect, useContext } from "react";
+import AuthContext from "../context/auth/authContext";
+import Carousel from "./Carousel";
+import Grades from "./grades/Grades";
 
-export class Home extends Component {
-    render() {
-        return (
-            <Fragment>
-                <Carousel />
-                <SearchBar />
-                <Recently />
-                <Grades />
-                <Grade11 />
-                <Grade10 />
-            </Fragment>
-        )
+import Recently from "./Recently";
+import SearchBar from "./SearchBar";
+
+const Home = ({ history }) => {
+
+  const authContext = useContext(AuthContext);
+  const { isAuthenticated } = authContext;
+
+
+  useEffect(() => {
+    document.body.style.backgroundColor = "#000";
+    if (!isAuthenticated) {
+      history.push('/login');
     }
-}
+  }, []);
 
-export default Home
+  return (
+    <Fragment>
+      <Carousel />
+      <SearchBar />
+      <Recently />
+      <Grades/>
+
+    </Fragment>
+  );
+};
+
+export default Home;
