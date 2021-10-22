@@ -10,6 +10,8 @@ const MainVideoPage = () => {
 
     const location = useLocation();
 
+    console.log(location.state.video);
+
     return (
         <Fragment>
             <div className="container mt-100">
@@ -29,7 +31,7 @@ const MainVideoPage = () => {
                 </div>
                 <div className="video-info">
                     <h3> {location.state.title} </h3>
-                    <p> {location.state.desc} </p>
+                    <p> {location.state.description} </p>
                 </div>
             </div>
         </Fragment>

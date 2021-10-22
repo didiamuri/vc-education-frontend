@@ -5,8 +5,8 @@ import GradeContext from '../../context/grade/gradeContext';
 
 const Course = ({ chapter }) => {
 
-    const gradeContext = useContext(GradeContext);
-    const { getArtcileByChap, articles } = gradeContext;
+    // const gradeContext = useContext(GradeContext);
+    // const { getArtcileByChap, articles } = gradeContext;
 
     const [articless, setArticless] = useState([]);
 
@@ -14,6 +14,10 @@ const Course = ({ chapter }) => {
     const [isActive, setIsActive] = useState(false);
     const viewVideo = (id, title, video, desc) => {
         history.push("/video", { id, title, video, desc });
+    }
+
+    const goToArticle = (article) => {
+        history.push("/video", article);
     }
 
     useEffect(() => {
@@ -54,8 +58,8 @@ const Course = ({ chapter }) => {
 
                     </div>
                     {isActive && <div className="accordion-content">
-                        {articless.map(({ title, _id, video, image, description }) => (
-                            <p key={_id} >{title}</p>
+                        {articless.map((article, key) => (
+                            <p key={article._id} onClick={() => goToArticle(article)}>{article.title}</p>
                         ))}
                     </div>}
 
