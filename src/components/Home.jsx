@@ -14,9 +14,9 @@ const Home = ({ history }) => {
 
   useEffect(() => {
     document.body.style.backgroundColor = "#000";
-    if (!isAuthenticated) {
-      history.push('/login');
-    }
+    // if (!isAuthenticated) {
+    //   history.push('/login');
+    // }
   }, []);
 
   return (
