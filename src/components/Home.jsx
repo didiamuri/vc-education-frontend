@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useContext } from "react";
-import AuthContext from "../context/auth/authContext";
+// import AuthContext from "../context/auth/authContext";
 import Carousel from "./Carousel";
 import Grades from "./grades/Grades";
 
@@ -8,8 +8,8 @@ import SearchBar from "./SearchBar";
 
 const Home = ({ history }) => {
 
-  const authContext = useContext(AuthContext);
-  const { isAuthenticated } = authContext;
+  // const authContext = useContext(AuthContext);
+  // const { isAuthenticated } = authContext;
 
 
   useEffect(() => {

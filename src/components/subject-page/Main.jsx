@@ -1,9 +1,7 @@
 import { Fragment, useEffect, useContext, useState } from 'react'
-import Accordion from './Accordion';
-import vid4 from '../../assets/img/vid4.png';
 import { useParams } from 'react-router';
 import GradeContext from '../../context/grade/gradeContext';
-import axios from 'axios';
+
 import Courses from '../grades/Courses';
 
 const MainSubjectPage = ({ history }) => {
